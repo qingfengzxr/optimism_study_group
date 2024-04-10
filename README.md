@@ -32,6 +32,15 @@ If the content you want to learn cannot be retrieved in our warehouse, it means 
 ## How to start learning?
 Our learning goals and content are the same, although when learning something new, a step-by-step approach is always the best. However, everyone has different levels of exposure to OP Stack and different points of interest. Restricting everyone to start learning according to a certain progress seems a bit rigid and can easily dampen the enthusiasm of participants. Therefore, we consider launching it in the form of **independent topic selection**. Everyone can choose topics for research independently based on their current exploration progress and content of interest. Just add the updated status in time in the **dynamic list (see below)**.
 
+## How to manage content?
+
+It is planned to use Github and Obsidian to manage the learning output of participants.
+
+**Why choose Obsidian?**
+Obsidian is a very convenient note management software. It can easily integrate various plug-ins and expand the software functions very conveniently to cope with possible new functional requirements in the future. In addition, the most important thing is that the function of Graph View can very conveniently help us organize our learning ideas, establish links to key knowledge points, and provide a cool UI display. Shaped like:
+![](/imgs/graph_view_img.png)
+As we gradually learn and produce learning output, as long as we make full use of the two-way link function, we can use Obsidian to build the above-mentioned knowledge graph. To a certain extent, improving the graph can also be used as a driving force to maintain output😄.
+
 ----
 # OP Stack共学小组
 ## 目标
