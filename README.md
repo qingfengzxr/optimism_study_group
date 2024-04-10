@@ -98,6 +98,7 @@ Obsidian是个十分方便的笔记管理软件，它可以方便的集成各种
 |    ...     |                           |                   |                      |                                |                         |
 |    ...     |                           |                   |                      |                                |                         |
 > **关于输出一栏**：可以是Link URL，但最优选还是在仓库内建立新的文件，使用双向链接连接。
+> 
 > **About Result Column**: It can be a Link URL, but it is most preferred to create a new file in the warehouse and connect it using a two-way link.
 
 ## 联系方式
