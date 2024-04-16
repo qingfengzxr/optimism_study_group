@@ -8,39 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0ade9c2d7878f4be",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "3cc719fd6a412d18",
+            "id": "63520301d68f1848",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "c86f4724d93a6a56",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "9051cc3d2817483f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
+                "file": "联系方式.md",
                 "mode": "source",
                 "source": false
               }
@@ -112,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "联系方式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "联系方式.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "联系方式.md"
               }
             }
           },
@@ -184,10 +157,14 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "9051cc3d2817483f",
+  "active": "63520301d68f1848",
   "lastOpenFiles": [
-    "imgs/Contact Information.md",
+    "参与时间记录.md",
+    "联系方式.md",
     "README.md",
+    "未命名",
+    "imgs/graph_view_img.png",
+    "imgs/Contact Information.md",
     "Obsidian的使用.md",
     "Untitled",
     "article/Untitled.md",
@@ -196,9 +173,7 @@
     "imgs/Pasted.md",
     "imgs/Pas.md",
     "imgs/未命名看板.md",
-    "imgs/未命名.md",
     "未命名.canvas",
-    "imgs/graph_view_img.png",
     "Welcome.md",
     "imgs"
   ]
