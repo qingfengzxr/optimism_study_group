@@ -12,7 +12,11 @@ In addition to each person's personal goals, the group also has two goals (**Gro
 ## References
 Reference materials related to OP governance:
   
-   TODO
+- [Optimism Vote Manual](https://github.com/ethereum-optimism/OPerating-manual/blob/main/manual.md#valid-proposal-types)
+- [Token House Governance Hub](https://plaid-cement-e44.notion.site/Token-House-Governance-Hub-decae75a0fa248e38f969abe8edef565)
+- [Optimism Governance 101](https://drive.google.com/file/d/1fPOEElNTQWFbCkdC1airWj-E73fqx5qY/view?pli=1)
+- [The Future of Optimism Governance](https://optimism.mirror.xyz/PLrAQgE1EGRo7GRrFoztplFChnUZda4DFGW3dkQayxY)
+
 
 Reference materials for the OP Stack technology stack include but are not limited to:
 
@@ -97,7 +101,11 @@ As we gradually learn and produce learning output, as long as we make full use o
 ## 参考资料
 OP治理相关的参考资料:
   
-  TODO
+- [Optimism Vote Manual](https://github.com/ethereum-optimism/OPerating-manual/blob/main/manual.md#valid-proposal-types)
+- [Token House Governance Hub](https://plaid-cement-e44.notion.site/Token-House-Governance-Hub-decae75a0fa248e38f969abe8edef565)
+- [Optimism Governance 101](https://drive.google.com/file/d/1fPOEElNTQWFbCkdC1airWj-E73fqx5qY/view?pli=1)
+- [The Future of Optimism Governance](https://optimism.mirror.xyz/PLrAQgE1EGRo7GRrFoztplFChnUZda4DFGW3dkQayxY)
+
 
 OP Stack技术栈可参考的资料包含但不限于：
 
@@ -167,7 +175,14 @@ OP Stack技术栈可参考的资料包含但不限于：
 3. .. 学习整理中
 
 #### OP 治理入门路径
-TODO
+OP 治理的 2 个目标：**Capture resistance.(捕获阻力)，Resource allocation（分配资源）**
+
+**Research**:
+1. OP 二院制度：Token House，Critzen House
+2. Token House 下各委员会：Grants Council，Security Council，Anticapture Commission，Developer Advisory Board
+![](op-gov-0001.png.png)
+
+3. RetroPGF：章程，投票机制，分配机制等
 
 
 ## 如何管理内容？
