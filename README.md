@@ -1,3 +1,8 @@
+
+![](/imgs/LXDAO-lightbg-Transparent.png)
+
+![](/imgs/OP-Whitebackground.png)
+
 # OP Study Group
 
 ## Goal

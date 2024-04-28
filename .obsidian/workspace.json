@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "参与时间记录.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "参与时间记录.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "参与时间记录.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "参与时间记录.md"
+                "file": "README.md"
               }
             }
           },
@@ -157,10 +157,16 @@
   "active": "9785daed53a6b5ad",
   "lastOpenFiles": [
     "Obsidian的使用.md",
-    "联系方式.md",
+    "imgs/OP-Whitebackground.png",
     "README.md",
-    "article/op-stack/OP 链架构概览.md",
+    "imgs/LXDAO-Whitebackground.png",
+    "imgs/LXDAO-lightbg-Transparent.png",
+    "imgs/OP-lightbg-Transparent.png",
+    "stake_info.md",
+    "contract_info.md",
     "参与时间记录.md",
+    "联系方式.md",
+    "article/op-stack/OP 链架构概览.md",
     "imgs/op-gov-0001.png.png",
     "article/op-stack/使用OP Stack搭建自己的Layer2.md",
     "imgs/python-example-output-002.png",
@@ -168,10 +174,6 @@
     "imgs/op-proposer-consele-output-002.png",
     "imgs/op-proposer-console-output-001.png",
     "imgs/op-batcher-console-output-001.png",
-    "imgs/op-node-console-output-001.png",
-    "imgs/op-geth-console-output-001.png",
-    "imgs/geth-init-001.png",
-    "imgs/deploy-contract-004.png",
     "article/op-stack/初识OP Stack.md",
     "article/op-stack/op-node启动参数解析.md",
     "article/superchain/Superchain.md",
