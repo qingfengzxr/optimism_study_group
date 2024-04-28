@@ -96,7 +96,7 @@ As we gradually learn and produce learning output, as long as we make full use o
 1. 我们希望能够切实的保护好大家学习的热情，推动并激励共学的行为。
 2. 这个仓库能囊括所有OP相关的知识并借助Obsidian的Graph View的能力，形成图谱。打造一个全面又炫酷的OP知识库。
 
-> OP生态：目前仅指OP治理机制、OP Stack技术栈、Superchain三方面。
+> OP生态：目前仅指OP治理机制、OP Stack技术栈、Superchain、公共物品资助研究四个方面。
 
 ## 参考资料
 OP治理相关的参考资料:
