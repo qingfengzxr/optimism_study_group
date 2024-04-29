@@ -1,3 +1,4 @@
 .obsidian/
 .obsidian/*.json
 .obsidian/graph.json
+.obsidian/workspace.json

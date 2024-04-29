@@ -1,10 +1,9 @@
+# OP Study Group
+
 
 ![](/imgs/LXDAO-lightbg-Transparent.png)
 
 ![](/imgs/OP-Whitebackground.png)
-
-# OP Study Group
-
 ## Goal
 The mutual learning group aims to gather people who are interested in OP, and everyone can invest in learning the OP ecology together. Through the form of shared learning, we can increase everyone's enthusiasm for learning, help everyone continue to learn, and achieve their **personal goals**.
 
