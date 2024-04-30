@@ -2,5 +2,8 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "imgs",
   "showUnsupportedFiles": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "rightToLeft": false,
+  "readableLineLength": true,
+  "strictLineBreaks": true
 }

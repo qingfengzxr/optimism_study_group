@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/op-stack/OP Chain架构概览.md",
+                "file": "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/op-stack/OP Chain架构概览.md",
+                "file": "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/op-stack/OP Chain架构概览.md",
+                "file": "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/op-stack/OP Chain架构概览.md"
+                "file": "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md"
               }
             }
           },
@@ -158,8 +158,9 @@
   },
   "active": "3e3258e79ca3f272",
   "lastOpenFiles": [
+    "imgs/1713237016085.jpg",
     "imgs/workflow-l2-devition-from-l1-001.png",
-    "article/op-stack/OP Chain架构概览.md",
+    "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md",
     "imgs/op-stack-components-002.png",
     "imgs/op-stack-componenets-001.png",
     "imgs/sequencer_sync.md",

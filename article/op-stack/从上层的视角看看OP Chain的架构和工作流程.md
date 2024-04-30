@@ -5,13 +5,14 @@
 1. 网络的参与者有哪些？
 2. 用户如何参与到网络中？
 3. L1的ETH如何到L2上去？
-4. OP Chain有哪些模块？这些模块是怎么合作的？分别负责什么事情？
-5. L2 区块是以什么规则来构建链的？
+4. OP Chain有哪些模块？
+5. L2是以什么规则来构建链的？
 
 对这些问题有了一定的了解后，再看源码，才不会云里雾里。
 
 ## 网络参与者有哪些？
 那么，让我们先从网络的参与者有哪些开始。
+
 ![](/imgs/OP_Network_Participants_Overview.png.png)
 
 上图展示了4个参与者，分别是**Users**、**Sequencers**、**Verifiers**、**ETH L1 Chain**。
@@ -71,7 +72,7 @@ Batch Inbox是一个L1上的常规的EOA账户。
 流程7，8，9涉及到故障证明相关的内容，这一部分较为复杂，暂时不在这里展开。我们先记住它是用来检测和处理L1和L2链状态分歧的即可，不影响我们理解OP Chain的工作流程。然后，**L2 Output Oracle**是一个合约，该合约主要用来存储**L2 output roots**（一个 32 字节值，用作对 L2 链当前状态的承诺。由sequencer生成和提交）。
 
 
-## OP Chain模块组成
+## OP Chain有哪些模块？
 ![](/imgs/op-stack-componenets-001.png)
 
 上图展示了OP Chain的核心组件。从L1和L2两个层级来看，L1层包含以下组件：
@@ -111,7 +112,7 @@ L2层包含以下组件：
 2. Rollup Node之间也存在一个特有的P2P网络，使用这个网络进行通信，而不是EE之间的P2P网络。
 3. Rollup Node通过Engine API和执行引擎交互。
 
-##  L2区块是以什么规则来构建链的？
+##  L2是以什么规则来构建链的？
 
 ![](/imgs/workflow-l2-devition-from-l1-001.png)
 
@@ -119,15 +120,33 @@ L2层包含以下组件：
 
 让我们先了解一下图中各个元素的含义：
 - Epoch
-每个L1区块，都会在L2对应一个Epoch。每个Epoch可以包含多个L2区块，起始的L2区块必须是包含L1 Deposit信息的L2区块(Deposit Block)。
+每个L1区块，对应一个L2的Epoch。每个Epoch可以包含多个L2区块，起始的L2区块必须是包含L1 Deposit信息的L2区块(Deposit Block)。
 - D1... D3
 表示Epoch 1中所有的Deposit信息，这些信息是从`OptimismPortal`合约上获得的。
 - B1... B7
-Transaction Batches。交易Batch不仅可以包含一个L2区块的交易，还可以包含多个L2区块排序好后的交易。
-- 一个L2区块中既可以包喊Deposit交易，也可以包含Batch交易。
+Transaction Batches。交易Batch不仅可以包含一个L2区块的交易，还可以包含多个L2区块排序好后的交易。每个Batch都包含了parent hash, L1 epoch的区块哈希和区块编号。
+- 一个L2区块中既可以包含Deposit交易，也可以包含Batch交易。
 
 D1是在L1上发现的第一个Deposit信息，以包含该信息的L1块为基础，作为Epoch1。推导出L2的第一个区块。B1作为同一个L1区块上的batch，和D1放在同一个L2区块中。
 
 以ETH作为L1和上一个教程中部署的L2参数为例，ETH出块的平均时间为12s, L2的平均出块时间为2s。这些值意味着一个Epoch的跨度为12s, 在这12s内，可以包含6个区块。这也是上图中，会有B2, B4, B5, B6, B7的原因。注意，如果从L2的视角来看，B2不代表只有一个区块，它可能是多个区块，因为一个Batch可以从多个排好序的区块中整合交易。
 
 按照同样的逻辑，我们根据在L1的第二个区块中的D2信息，推导出L2上的第二个Deposit Block，也是Epoch2的起始区块。后面的推导都是这样的一个逻辑，一直循环直到达到L1的最新的的区块为止。
+
+基础逻辑就是上面说的这样了，现在在这个基础上再补充一个细节，这个细节在上图中没有体现，但非常重要。这个细节就是：**SEQUENCING_WINDOW_SIZE**。
+
+让我们先反转一下观察角度，之前是L1 -> L2, 现在我们看L2 -> L1。假设我们在D2追上了L1的最高点，后面需要提交B4,B5,B6... (从这里开始，不是在解释上图了，只是利用一下，表述的内容并不相同)。OP Stack协议定义了一个SEQUENCING_WINDOW_SIZE，在`n(epoch编号)`+`SEQUENCING_WINDOW_SIZE`内，该Batch必须被提交到L1上，否则是无效的。另一方面，这也意味着B4,B5,B6... 可以提交到后面的epoch所对应的L1区块上，尽管Batch记录的epoch为epoch2，但只要还在SEQUENCING_WINDOW_SIZE的范围内，就有效。 
+
+再回过来看L1 -> L2， 也就是说推导L2区块时，对于batches的检索，需要检索`n`+`SEQUENCING_WINDOW_SIZE`的区块，才能确保检索出了当前epoch中包含的所有的batches。
+
+还有一张图，对这个过程做了更详细的描述，不过这个图中涉及了更多的代码概念，准备放到后面，在源码阶段再展开讲述。
+![](/imgs/1713237016085.jpg)
+
+读者朋友如果感兴趣的话，也可以提前看看，整体逻辑上和上图是差不多的，不过加入了更多实现上的细节。可以结合OP Stack规格书的[derivation](https://specs.optimism.io/protocol/derivation.html)一节来看。
+
+## 总结
+这篇文章，我尝试以上层的视角，来向大家介绍OP Chain的整体架构，以及主要的工作流程。让大家建立一个直观的印象，这样后续结合源码时，能够更轻松，更容易理解。
+
+文章中的内容，全部来源于OP Stack规格书以及optimism仓库的源码。目前我也还处于学习理解的阶段，而系统本身有一定的复杂度，难免有所疏漏，还请海涵指正！
+
+最后，感谢大家的阅读~
