@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md"
+                "file": "README.md"
               }
             }
           },
@@ -158,9 +158,9 @@
   },
   "active": "3e3258e79ca3f272",
   "lastOpenFiles": [
+    "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md",
     "imgs/1713237016085.jpg",
     "imgs/workflow-l2-devition-from-l1-001.png",
-    "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md",
     "imgs/op-stack-components-002.png",
     "imgs/op-stack-componenets-001.png",
     "imgs/sequencer_sync.md",
@@ -176,7 +176,6 @@
     "contract_info.md",
     "参与时间记录.md",
     "联系方式.md",
-    "imgs/op-gov-0001.png.png",
     "article/op-stack/使用OP Stack搭建自己的Layer2.md",
     "article/op-stack/初识OP Stack.md",
     "article/op-stack/op-node启动参数解析.md",
