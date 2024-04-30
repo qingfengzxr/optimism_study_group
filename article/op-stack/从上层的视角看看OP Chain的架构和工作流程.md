@@ -135,7 +135,7 @@ D1是在L1上发现的第一个Deposit信息，以包含该信息的L1块为基�
 
 基础逻辑就是上面说的这样了，现在在这个基础上再补充一个细节，这个细节在上图中没有体现，但非常重要。这个细节就是：**SEQUENCING_WINDOW_SIZE**。
 
-让我们先反转一下观察角度，之前是L1 -> L2, 现在我们看L2 -> L1。假设我们在D2追上了L1的最高点，后面需要提交B4,B5,B6... (从这里开始，不是在解释上图了，只是利用一下，表述的内容并不相同)。OP Stack协议定义了一个SEQUENCING_WINDOW_SIZE，在`n(epoch编号)`+`SEQUENCING_WINDOW_SIZE`内，该Batch必须被提交到L1上，否则是无效的。另一方面，这也意味着B4,B5,B6... 可以提交到后面的epoch所对应的L1区块上，尽管Batch记录的epoch为epoch2，但只要还在SEQUENCING_WINDOW_SIZE的范围内，就有效。 
+让我们先反转一下观察角度，之前是L1 -> L2, 现在我们看L2 -> L1。假设我们在D2追上了L1的最高点，后面需要提交B4,B5,B6... (从这里开始，不是在解释上图了，只是利用一下，表述的内容并不相同)。OP Stack协议定义了一个SEQUENCING_WINDOW_SIZE，在`n(epoch编号)`+`SEQUENCING_WINDOW_SIZE`内，指定epoch内的Batch必须被提交到L1上，否则是无效的。另一方面，这也意味着B4,B5,B6... 可以提交到后面的epoch所对应的L1区块上，尽管Batch记录的epoch为epoch2，但只要还在SEQUENCING_WINDOW_SIZE的范围内，就有效。 
 
 再回过来看L1 -> L2， 也就是说推导L2区块时，对于batches的检索，需要检索`n`+`SEQUENCING_WINDOW_SIZE`的区块，才能确保检索出了当前epoch中包含的所有的batches。
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md"
               }
             }
           },
@@ -158,14 +158,14 @@
   },
   "active": "3e3258e79ca3f272",
   "lastOpenFiles": [
-    "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md",
     "imgs/1713237016085.jpg",
+    "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md",
+    "imgs/sequencer_sync_deposit.png",
+    "README.md",
     "imgs/workflow-l2-devition-from-l1-001.png",
     "imgs/op-stack-components-002.png",
     "imgs/op-stack-componenets-001.png",
     "imgs/sequencer_sync.md",
-    "imgs/sequencer_sync_deposit.png",
-    "README.md",
     "imgs/OP_Network_Participants_Overview.png.png",
     "Obsidian的使用.md",
     "imgs/OP-Whitebackground.png",
