@@ -146,16 +146,20 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
   "active": "9785daed53a6b5ad",
   "lastOpenFiles": [
+    "article/op-stack/op-proposer提交的时间不均匀原因排查.md",
+    "README.md",
     "imgs/workflow-l2-devition-from-l1-001.png",
     "imgs/sequencer_sync_deposit.png",
     "imgs/op-stack-components-002.png",
@@ -165,7 +169,6 @@
     "article/op-stack/从上层的视角看看OP Chain的架构和工作流程.md",
     "Obsidian的使用.md",
     "imgs/OP-Whitebackground.png",
-    "README.md",
     "imgs/LXDAO-Whitebackground.png",
     "imgs/LXDAO-lightbg-Transparent.png",
     "imgs/OP-lightbg-Transparent.png",
@@ -174,7 +177,6 @@
     "参与时间记录.md",
     "联系方式.md",
     "article/op-stack/OP 链架构概览.md",
-    "imgs/op-gov-0001.png.png",
     "article/op-stack/使用OP Stack搭建自己的Layer2.md",
     "article/op-stack/初识OP Stack.md",
     "article/op-stack/op-node启动参数解析.md",
