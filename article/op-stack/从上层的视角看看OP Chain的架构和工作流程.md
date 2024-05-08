@@ -107,6 +107,7 @@ L2层包含以下组件：
 
 此外，上图还可以将Rollup Node和L2 Execution Engine的关系再展开一下，得到下图：
 ![](/imgs/op-stack-components-002.png)
+
 这个图展示了以下几个关键信息：
 1. 执行引擎(EE)之间使用独立于Rollup Node的对等网络进行通信。可以同步交易，区块状态等。
 2. Rollup Node之间也存在一个特有的P2P网络，使用这个网络进行通信，而不是EE之间的P2P网络。
