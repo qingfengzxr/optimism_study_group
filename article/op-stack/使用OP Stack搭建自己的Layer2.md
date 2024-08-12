@@ -547,7 +547,7 @@ loop.run_until_complete(test())
 python helloop.py
 ```
 如果一切正常，你将看到类似输出：
-![[python-example-output-002.png]]
+![](/imgs/python-example-output-002.png)
 
 ## 总结
 至此，我们的教程也要结束了。现在我们已经拥有了一个可以正常使用且功能齐全的 OP Stack Rollup。接下来，就可以根据我们的需求进行使用了。
